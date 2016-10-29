@@ -1,0 +1,15 @@
+PODS:
+  - EasyPeasy (1.2.1)
+  - Hex (3.0.1)
+
+DEPENDENCIES:
+  - EasyPeasy (= 1.2.1)
+  - Hex (= 3.0.1)
+
+SPEC CHECKSUMS:
+  EasyPeasy: b39f8cb9619fd248f8b65654e38eafb07efaf675
+  Hex: 037b6fd6dc7ef33f43d94f990bd56aa4805d8215
+
+PODFILE CHECKSUM: 61d7445acb0ed483582a4426c43991bf89590991
+
+COCOAPODS: 1.0.1

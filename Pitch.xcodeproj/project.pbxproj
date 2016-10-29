@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6A8A961DC4C5D8003D1858 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = ED6A8A951DC4C5D8003D1858 /* sample.json */; };
+		ED6A8A981DC4CDC3003D1858 /* ActionVisualisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A971DC4CDC3003D1858 /* ActionVisualisationView.swift */; };
 		EDCCB9CD1DC4A91E002B6246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */; };
 		EDCCB9CF1DC4A91E002B6246 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */; };
 		EDCCB9D11DC4A91E002B6246 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9D01DC4A91E002B6246 /* DetailViewController.swift */; };
@@ -14,6 +16,19 @@
 		EDCCB9D61DC4A91E002B6246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCCB9D51DC4A91E002B6246 /* Assets.xcassets */; };
 		EDCCB9D91DC4A91E002B6246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCCB9D71DC4A91E002B6246 /* LaunchScreen.storyboard */; };
 		EDCCB9E41DC4A91E002B6246 /* PitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9E31DC4A91E002B6246 /* PitchTests.swift */; };
+		EDCCB9EF1DC4A9C1002B6246 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EDCCB9EE1DC4A9C1002B6246 /* Podfile */; };
+		EDCCB9F11DC4ABA2002B6246 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = EDCCB9F01DC4ABA2002B6246 /* Cartfile */; };
+		EDCCB9F31DC4AE8A002B6246 /* PitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9F21DC4AE8A002B6246 /* PitchViewController.swift */; };
+		EDCCB9F51DC4AF34002B6246 /* PitchActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9F41DC4AF34002B6246 /* PitchActionsViewController.swift */; };
+		EDCCB9F71DC4B1E6002B6246 /* PlayerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9F61DC4B1E6002B6246 /* PlayerAction.swift */; };
+		EDCCB9FF1DC4B33A002B6246 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9F81DC4B33A002B6246 /* Rex.framework */; };
+		EDCCBA001DC4B33A002B6246 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9F91DC4B33A002B6246 /* ReactiveCocoa.framework */; };
+		EDCCBA011DC4B33A002B6246 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9FA1DC4B33A002B6246 /* Result.framework */; };
+		EDCCBA021DC4B33A002B6246 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9FB1DC4B33A002B6246 /* ObjectMapper.framework */; };
+		EDCCBA031DC4B33A002B6246 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9FC1DC4B33A002B6246 /* CocoaLumberjackSwift.framework */; };
+		EDCCBA041DC4B33A002B6246 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9FD1DC4B33A002B6246 /* CocoaLumberjack.framework */; };
+		EDCCBA051DC4B33A002B6246 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCB9FE1DC4B33A002B6246 /* Alamofire.framework */; };
+		FF0A2FD806B7F69A8EF0F624 /* Pods_Pitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EC0E9AB39F95A9138EE424 /* Pods_Pitch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259277C6ED559645CE95BCAB /* Pods-Pitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch/Pods-Pitch.debug.xcconfig"; sourceTree = "<group>"; };
+		48EBD12F0880A398B965E508 /* Pods-Pitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch/Pods-Pitch.release.xcconfig"; sourceTree = "<group>"; };
+		48EC0E9AB39F95A9138EE424 /* Pods_Pitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A8A951DC4C5D8003D1858 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		ED6A8A971DC4CDC3003D1858 /* ActionVisualisationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionVisualisationView.swift; sourceTree = "<group>"; };
 		EDCCB9C91DC4A91E002B6246 /* Pitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +58,18 @@
 		EDCCB9DF1DC4A91E002B6246 /* PitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCB9E31DC4A91E002B6246 /* PitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchTests.swift; sourceTree = "<group>"; };
 		EDCCB9E51DC4A91E002B6246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCCB9EE1DC4A9C1002B6246 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EDCCB9F01DC4ABA2002B6246 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		EDCCB9F21DC4AE8A002B6246 /* PitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchViewController.swift; sourceTree = "<group>"; };
+		EDCCB9F41DC4AF34002B6246 /* PitchActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchActionsViewController.swift; sourceTree = "<group>"; };
+		EDCCB9F61DC4B1E6002B6246 /* PlayerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerAction.swift; sourceTree = "<group>"; };
+		EDCCB9F81DC4B33A002B6246 /* Rex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rex.framework; path = Carthage/Build/iOS/Rex.framework; sourceTree = "<group>"; };
+		EDCCB9F91DC4B33A002B6246 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		EDCCB9FA1DC4B33A002B6246 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		EDCCB9FB1DC4B33A002B6246 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		EDCCB9FC1DC4B33A002B6246 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		EDCCB9FD1DC4B33A002B6246 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		EDCCB9FE1DC4B33A002B6246 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCCB9FF1DC4B33A002B6246 /* Rex.framework in Frameworks */,
+				EDCCBA001DC4B33A002B6246 /* ReactiveCocoa.framework in Frameworks */,
+				EDCCBA011DC4B33A002B6246 /* Result.framework in Frameworks */,
+				EDCCBA021DC4B33A002B6246 /* ObjectMapper.framework in Frameworks */,
+				EDCCBA031DC4B33A002B6246 /* CocoaLumberjackSwift.framework in Frameworks */,
+				EDCCBA041DC4B33A002B6246 /* CocoaLumberjack.framework in Frameworks */,
+				EDCCBA051DC4B33A002B6246 /* Alamofire.framework in Frameworks */,
+				FF0A2FD806B7F69A8EF0F624 /* Pods_Pitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +98,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D67F942784F889BA5243C22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259277C6ED559645CE95BCAB /* Pods-Pitch.debug.xcconfig */,
+				48EBD12F0880A398B965E508 /* Pods-Pitch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E561BD4585881F4AC720B6E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCB9F81DC4B33A002B6246 /* Rex.framework */,
+				EDCCB9F91DC4B33A002B6246 /* ReactiveCocoa.framework */,
+				EDCCB9FA1DC4B33A002B6246 /* Result.framework */,
+				EDCCB9FB1DC4B33A002B6246 /* ObjectMapper.framework */,
+				EDCCB9FC1DC4B33A002B6246 /* CocoaLumberjackSwift.framework */,
+				EDCCB9FD1DC4B33A002B6246 /* CocoaLumberjack.framework */,
+				EDCCB9FE1DC4B33A002B6246 /* Alamofire.framework */,
+				48EC0E9AB39F95A9138EE424 /* Pods_Pitch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDCCB9C01DC4A91E002B6246 = {
 			isa = PBXGroup;
 			children = (
+				EDCCB9F01DC4ABA2002B6246 /* Cartfile */,
+				EDCCB9EE1DC4A9C1002B6246 /* Podfile */,
 				EDCCB9CB1DC4A91E002B6246 /* Pitch */,
 				EDCCB9E21DC4A91E002B6246 /* PitchTests */,
 				EDCCB9CA1DC4A91E002B6246 /* Products */,
+				1D67F942784F889BA5243C22 /* Pods */,
+				E561BD4585881F4AC720B6E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +147,7 @@
 		EDCCB9CB1DC4A91E002B6246 /* Pitch */ = {
 			isa = PBXGroup;
 			children = (
+				ED6A8A951DC4C5D8003D1858 /* sample.json */,
 				EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */,
 				EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */,
 				EDCCB9D01DC4A91E002B6246 /* DetailViewController.swift */,
@@ -86,6 +155,10 @@
 				EDCCB9D51DC4A91E002B6246 /* Assets.xcassets */,
 				EDCCB9D71DC4A91E002B6246 /* LaunchScreen.storyboard */,
 				EDCCB9DA1DC4A91E002B6246 /* Info.plist */,
+				EDCCB9F21DC4AE8A002B6246 /* PitchViewController.swift */,
+				EDCCB9F41DC4AF34002B6246 /* PitchActionsViewController.swift */,
+				EDCCB9F61DC4B1E6002B6246 /* PlayerAction.swift */,
+				ED6A8A971DC4CDC3003D1858 /* ActionVisualisationView.swift */,
 			);
 			path = Pitch;
 			sourceTree = "<group>";
@@ -106,9 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDCCB9E81DC4A91E002B6246 /* Build configuration list for PBXNativeTarget "Pitch" */;
 			buildPhases = (
+				158526EB034E5B3DEE163609 /* [CP] Check Pods Manifest.lock */,
 				EDCCB9C51DC4A91E002B6246 /* Sources */,
 				EDCCB9C61DC4A91E002B6246 /* Frameworks */,
 				EDCCB9C71DC4A91E002B6246 /* Resources */,
+				4A1FAB72C53EA206E7B087E3 /* [CP] Embed Pods Frameworks */,
+				3CD08B1FADEA77CFA1BC793D /* [CP] Copy Pods Resources */,
+				EDCCBA061DC4B343002B6246 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -180,9 +257,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCCB9F11DC4ABA2002B6246 /* Cartfile in Resources */,
 				EDCCB9D91DC4A91E002B6246 /* LaunchScreen.storyboard in Resources */,
 				EDCCB9D61DC4A91E002B6246 /* Assets.xcassets in Resources */,
+				EDCCB9EF1DC4A9C1002B6246 /* Podfile in Resources */,
 				EDCCB9D41DC4A91E002B6246 /* Main.storyboard in Resources */,
+				ED6A8A961DC4C5D8003D1858 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +275,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		158526EB034E5B3DEE163609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CD08B1FADEA77CFA1BC793D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pitch/Pods-Pitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A1FAB72C53EA206E7B087E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pitch/Pods-Pitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCCBA061DC4B343002B6246 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rex.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDCCB9C51DC4A91E002B6246 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCCB9F71DC4B1E6002B6246 /* PlayerAction.swift in Sources */,
 				EDCCB9D11DC4A91E002B6246 /* DetailViewController.swift in Sources */,
 				EDCCB9CF1DC4A91E002B6246 /* MasterViewController.swift in Sources */,
+				EDCCB9F51DC4AF34002B6246 /* PitchActionsViewController.swift in Sources */,
 				EDCCB9CD1DC4A91E002B6246 /* AppDelegate.swift in Sources */,
+				ED6A8A981DC4CDC3003D1858 /* ActionVisualisationView.swift in Sources */,
+				EDCCB9F31DC4AE8A002B6246 /* PitchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +484,13 @@
 		};
 		EDCCB9E91DC4A91E002B6246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259277C6ED559645CE95BCAB /* Pods-Pitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Pitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realtimegames.Pitch;
@@ -342,8 +500,13 @@
 		};
 		EDCCB9EA1DC4A91E002B6246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48EBD12F0880A398B965E508 /* Pods-Pitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Pitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realtimegames.Pitch;
@@ -394,6 +557,7 @@
 				EDCCB9EA1DC4A91E002B6246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDCCB9EB1DC4A91E002B6246 /* Build configuration list for PBXNativeTarget "PitchTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +566,7 @@
 				EDCCB9ED1DC4A91E002B6246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
