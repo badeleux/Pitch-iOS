@@ -8,13 +8,56 @@
 
 import Foundation
 import ObjectMapper
+import UIKit
+
+struct PlayerActionViewModel {
+    let origin: PlayerAction
+    let destination: PlayerAction
+    let progress: CGFloat
+    
+    func originPlayer(inRect canvasRect: CGRect) -> Colorer {
+        let center = origin.coordinates.translate(toCanvasCoordinates: canvasRect.size)
+        return Filled(color: Black, shape: Circle(centerX: Int(center.x), Y: Int(center.y), radius: 10))
+    }
+    
+    func destPlayer(inRect canvasRect: CGRect) -> Colorer {
+        let center = destination.coordinates.translate(toCanvasCoordinates: canvasRect.size)
+        return Filled(color: White, shape: Circle(centerX: Int(center.x), Y: Int(center.y), radius: 10))
+    }
+    
+    func arrowWithBall(inRect canvasRect: CGRect) -> Colorer {
+        let lineOrigin = origin.coordinates.translate(toCanvasCoordinates: canvasRect.size)
+        let lineDest = CGPoint.between(between: lineOrigin,
+                                         and: destination.coordinates.translate(toCanvasCoordinates: canvasRect.size),
+                                         atPart: self.progress)
+        return Outlined(color: Blue, shape: Line([lineOrigin, lineDest].map { $0.toPoint }))
+    }
+}
+
+extension CGPoint {
+    func translate(toCanvasCoordinates canvasSize: CGSize) -> CGPoint {
+        let xFactor = self.x / 100.0
+        let yFactor = self.y / 100.0
+        return CGPointMake(xFactor * canvasSize.width, yFactor * canvasSize.height)
+    }
+    
+    static func between(between a: CGPoint, and b: CGPoint, atPart progress: CGFloat) -> CGPoint {
+        return CGPointMake(a.x + progress * (b.x - a.x), a.y + progress * (b.y - a.y))
+    }
+    
+    var toPoint: Point {
+        return Point(x: Int(self.x), y: Int(self.y))
+    }
+}
 
 
 struct PlayerActionIndicator {
     
     static func indicator(position: Double) -> PlayerActionIndicator {
-        let index = Int(position)
-        return PlayerActionIndicator(actionIndex: index, progress: position - Double(index))
+        let p = max(0.0, position)
+        let index = Int(p)
+        let progress = p - Double(index)
+        return PlayerActionIndicator(actionIndex: index, progress: progress)
     }
     
     
@@ -47,6 +90,9 @@ public class PlayerAction: NSObject, Mappable, NSCoding {
     public var y: Float?
     public var playerName: String?
     public var home: Bool = false
+    public var coordinates: CGPoint {
+        return CGPointMake(CGFloat(self.x ?? 0.0), CGFloat(self.y ?? 0.0))
+    }
     
     
     

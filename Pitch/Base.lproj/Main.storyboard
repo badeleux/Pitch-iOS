@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -142,14 +143,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3U-zc-zKs">
-                                <rect key="frame" x="0.0" y="170" width="600" height="430"/>
+                                <rect key="frame" x="0.0" y="420" width="600" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="IZy-5L-ZRY">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start scrolling to see how action will develop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phI-O9-QQr">
-                                            <rect key="frame" x="0.0" y="39.5" width="339" height="21"/>
+                                            <rect key="frame" x="0.0" y="39" width="339" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -177,7 +178,10 @@
                                 </connections>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-mR-6aB">
-                                <rect key="frame" x="0.0" y="20" width="600" height="150"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cjM-mR-6aB" secondAttribute="height" multiplier="1050:700" id="VjT-er-caZ"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="fye-7V-bHi" kind="embed" identifier="Pitch" id="0Mb-T1-hVN"/>
                                 </connections>
@@ -194,6 +198,11 @@
                             <constraint firstItem="piP-en-aUp" firstAttribute="top" secondItem="c3U-zc-zKs" secondAttribute="bottom" id="ru7-oK-xxC"/>
                             <constraint firstItem="cjM-mR-6aB" firstAttribute="leading" secondItem="MAQ-6b-fjH" secondAttribute="leading" id="x4w-lM-08v"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yru-rZ-DNd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="actionsTableView" destination="c3U-zc-zKs" id="5dh-U2-pAP"/>
@@ -212,16 +221,41 @@
                         <viewControllerLayoutGuide type="bottom" id="bVi-hA-ul4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Hf-UY-sBS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.31372549020000001" green="0.70196078429999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitch" translatesAutoresizingMaskIntoConstraints="NO" id="vTD-RG-M1e">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vea-aF-6KP" customClass="ActionVisualisationView" customModule="Pitch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTD-RG-M1e" firstAttribute="top" secondItem="n7K-LZ-FIn" secondAttribute="bottom" id="ERS-wl-vR2"/>
+                            <constraint firstItem="vTD-RG-M1e" firstAttribute="leading" secondItem="6Hf-UY-sBS" secondAttribute="leading" id="EUb-JP-b6R"/>
+                            <constraint firstItem="vea-aF-6KP" firstAttribute="top" secondItem="n7K-LZ-FIn" secondAttribute="bottom" id="GCe-4t-AB9"/>
+                            <constraint firstAttribute="trailing" secondItem="vea-aF-6KP" secondAttribute="trailing" id="Gu3-Hx-B51"/>
+                            <constraint firstAttribute="trailing" secondItem="vTD-RG-M1e" secondAttribute="trailing" id="IXE-4d-cbe"/>
+                            <constraint firstItem="vea-aF-6KP" firstAttribute="leading" secondItem="6Hf-UY-sBS" secondAttribute="leading" id="gMd-nP-bLL"/>
+                            <constraint firstItem="bVi-hA-ul4" firstAttribute="top" secondItem="vTD-RG-M1e" secondAttribute="bottom" id="qRD-wo-uRz"/>
+                            <constraint firstItem="bVi-hA-ul4" firstAttribute="top" secondItem="vea-aF-6KP" secondAttribute="bottom" id="vKc-dN-gdj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionVisualisationView" destination="vea-aF-6KP" id="m50-Pz-HSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zi-g6-0qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="169" y="1795"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pitch" width="1050" height="700"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>

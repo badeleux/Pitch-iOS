@@ -9,13 +9,15 @@
 import Foundation
 import UIKit
 import ReactiveCocoa
+import EasyPeasy
 
 class PitchViewController: UIViewController {
-    let actionIndicator = MutableProperty<PlayerActionIndicator>(PlayerActionIndicator())
-    let actions = MutableProperty<[PlayerAction]>([])
+    let actionVisualisation = MutableProperty<PlayerActionViewModel?>(nil)
+    @IBOutlet weak var actionVisualisationView: ActionVisualisationView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.actionVisualisationView.actionVisualisationVM <~ self.actionVisualisation.producer
     }
     
 }

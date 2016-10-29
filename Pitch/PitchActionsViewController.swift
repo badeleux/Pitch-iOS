@@ -31,8 +31,11 @@ class PitchActionsViewController: UIViewController {
             self?.actionsTableView.reloadData()
         }).start()
         
-        self.pitchViewController.actions <~ self.actions.producer
-        self.pitchViewController.actionIndicator <~ self.actionIndicator
+        self.pitchViewController.actionVisualisation <~ self.actions.producer.combineLatestWith(self.actionIndicator.producer).map({ (actions: [PlayerAction], indicator: PlayerActionIndicator) -> PlayerActionViewModel in
+            let origin = actions[indicator.actionIndex]
+            let dest = actions[indicator.actionIndex + 1]
+            return PlayerActionViewModel(origin: origin, destination: dest, progress: CGFloat(indicator.progress))
+        })
         
         self.actionIndicator <~ self.rac_signalForSelector(#selector(PitchActionsViewController.scrollViewDidScroll(_:)))
         .toSignalProducer()
@@ -46,10 +49,11 @@ class PitchActionsViewController: UIViewController {
         .debounce(0.01, onScheduler: QueueScheduler.mainQueueScheduler)
         .map({ [weak self] (sv: UIScrollView) -> PlayerActionIndicator in
             let indicator = PlayerActionIndicator.indicator(self?.position(forContentOffset: sv.contentOffset) ?? 0.0)
-            print("Action index: " + indicator.actionIndex.description + "Progress: " + indicator.progress.description)
+//            print("Action index: " + indicator.actionIndex.description + "Progress: " + indicator.progress.description)
             return indicator
         })
         .ignoreError()
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -66,8 +70,18 @@ class PitchActionsViewController: UIViewController {
             Right(0),
             Height(3),
             Width(20),
-            Top((self.actionsTableView.tableHeaderView?.frame.size.height ?? 0) + self.actionsTableView.frame.origin.y)
+            Top(self.actionsTableView.tableHeaderView?.frame.size.height ?? 0).to(self.actionsTableView, .Top)
         ]
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.actionsTableView.contentInset = UIEdgeInsetsMake(0, 0, self.actionsTableView.frame.size.height - self.actionsTableView.tableHeaderView!.frame.size.height, 0)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
     
     func fetchActions() -> SignalProducer<[PlayerAction], NoError> {
@@ -107,6 +121,6 @@ extension PitchActionsViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return self.actions.value.count
     }
 }

@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		ED6A8A961DC4C5D8003D1858 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = ED6A8A951DC4C5D8003D1858 /* sample.json */; };
 		ED6A8A981DC4CDC3003D1858 /* ActionVisualisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A971DC4CDC3003D1858 /* ActionVisualisationView.swift */; };
+		ED6A8AA71DC4D39D003D1858 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A9A1DC4D39D003D1858 /* Animation.swift */; };
+		ED6A8AA81DC4D39D003D1858 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A9B1DC4D39D003D1858 /* Color.swift */; };
+		ED6A8AA91DC4D39D003D1858 /* Colorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A9C1DC4D39D003D1858 /* Colorer.swift */; };
+		ED6A8AAA1DC4D39D003D1858 /* DePict_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A9D1DC4D39D003D1858 /* DePict_Internal.swift */; };
+		ED6A8AAB1DC4D39D003D1858 /* DePictLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8A9F1DC4D39D003D1858 /* DePictLib.swift */; };
+		ED6A8AAC1DC4D39D003D1858 /* Image_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8AA01DC4D39D003D1858 /* Image_iOS.swift */; };
+		ED6A8AAE1DC4D39D003D1858 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED6A8AA21DC4D39D003D1858 /* Info.plist */; };
+		ED6A8AAF1DC4D39D003D1858 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8AA31DC4D39D003D1858 /* Mask.swift */; };
+		ED6A8AB01DC4D39D003D1858 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8AA41DC4D39D003D1858 /* Recursion.swift */; };
+		ED6A8AB11DC4D39D003D1858 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8AA51DC4D39D003D1858 /* Shape.swift */; };
+		ED6A8AB21DC4D39D003D1858 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8AA61DC4D39D003D1858 /* Transformation.swift */; };
 		EDCCB9CD1DC4A91E002B6246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */; };
 		EDCCB9CF1DC4A91E002B6246 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */; };
 		EDCCB9D11DC4A91E002B6246 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB9D01DC4A91E002B6246 /* DetailViewController.swift */; };
@@ -47,6 +58,18 @@
 		48EC0E9AB39F95A9138EE424 /* Pods_Pitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A8A951DC4C5D8003D1858 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		ED6A8A971DC4CDC3003D1858 /* ActionVisualisationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionVisualisationView.swift; sourceTree = "<group>"; };
+		ED6A8A9A1DC4D39D003D1858 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		ED6A8A9B1DC4D39D003D1858 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		ED6A8A9C1DC4D39D003D1858 /* Colorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorer.swift; sourceTree = "<group>"; };
+		ED6A8A9D1DC4D39D003D1858 /* DePict_Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DePict_Internal.swift; sourceTree = "<group>"; };
+		ED6A8A9E1DC4D39D003D1858 /* DePictLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DePictLib.h; sourceTree = "<group>"; };
+		ED6A8A9F1DC4D39D003D1858 /* DePictLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DePictLib.swift; sourceTree = "<group>"; };
+		ED6A8AA01DC4D39D003D1858 /* Image_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image_iOS.swift; sourceTree = "<group>"; };
+		ED6A8AA21DC4D39D003D1858 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6A8AA31DC4D39D003D1858 /* Mask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
+		ED6A8AA41DC4D39D003D1858 /* Recursion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
+		ED6A8AA51DC4D39D003D1858 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		ED6A8AA61DC4D39D003D1858 /* Transformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
 		EDCCB9C91DC4A91E002B6246 /* Pitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +145,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED6A8A991DC4D39D003D1858 /* DePictLib */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A8A9A1DC4D39D003D1858 /* Animation.swift */,
+				ED6A8A9B1DC4D39D003D1858 /* Color.swift */,
+				ED6A8A9C1DC4D39D003D1858 /* Colorer.swift */,
+				ED6A8A9D1DC4D39D003D1858 /* DePict_Internal.swift */,
+				ED6A8A9E1DC4D39D003D1858 /* DePictLib.h */,
+				ED6A8A9F1DC4D39D003D1858 /* DePictLib.swift */,
+				ED6A8AA01DC4D39D003D1858 /* Image_iOS.swift */,
+				ED6A8AA21DC4D39D003D1858 /* Info.plist */,
+				ED6A8AA31DC4D39D003D1858 /* Mask.swift */,
+				ED6A8AA41DC4D39D003D1858 /* Recursion.swift */,
+				ED6A8AA51DC4D39D003D1858 /* Shape.swift */,
+				ED6A8AA61DC4D39D003D1858 /* Transformation.swift */,
+			);
+			path = DePictLib;
+			sourceTree = "<group>";
+		};
 		EDCCB9C01DC4A91E002B6246 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +189,7 @@
 		EDCCB9CB1DC4A91E002B6246 /* Pitch */ = {
 			isa = PBXGroup;
 			children = (
+				ED6A8A991DC4D39D003D1858 /* DePictLib */,
 				ED6A8A951DC4C5D8003D1858 /* sample.json */,
 				EDCCB9CC1DC4A91E002B6246 /* AppDelegate.swift */,
 				EDCCB9CE1DC4A91E002B6246 /* MasterViewController.swift */,
@@ -263,6 +306,7 @@
 				EDCCB9EF1DC4A9C1002B6246 /* Podfile in Resources */,
 				EDCCB9D41DC4A91E002B6246 /* Main.storyboard in Resources */,
 				ED6A8A961DC4C5D8003D1858 /* sample.json in Resources */,
+				ED6A8AAE1DC4D39D003D1858 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,13 +393,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6A8AA91DC4D39D003D1858 /* Colorer.swift in Sources */,
 				EDCCB9F71DC4B1E6002B6246 /* PlayerAction.swift in Sources */,
+				ED6A8AAB1DC4D39D003D1858 /* DePictLib.swift in Sources */,
+				ED6A8AB11DC4D39D003D1858 /* Shape.swift in Sources */,
 				EDCCB9D11DC4A91E002B6246 /* DetailViewController.swift in Sources */,
+				ED6A8AB01DC4D39D003D1858 /* Recursion.swift in Sources */,
+				ED6A8AA71DC4D39D003D1858 /* Animation.swift in Sources */,
 				EDCCB9CF1DC4A91E002B6246 /* MasterViewController.swift in Sources */,
+				ED6A8AB21DC4D39D003D1858 /* Transformation.swift in Sources */,
 				EDCCB9F51DC4AF34002B6246 /* PitchActionsViewController.swift in Sources */,
 				EDCCB9CD1DC4A91E002B6246 /* AppDelegate.swift in Sources */,
 				ED6A8A981DC4CDC3003D1858 /* ActionVisualisationView.swift in Sources */,
+				ED6A8AAC1DC4D39D003D1858 /* Image_iOS.swift in Sources */,
 				EDCCB9F31DC4AE8A002B6246 /* PitchViewController.swift in Sources */,
+				ED6A8AAA1DC4D39D003D1858 /* DePict_Internal.swift in Sources */,
+				ED6A8AA81DC4D39D003D1858 /* Color.swift in Sources */,
+				ED6A8AAF1DC4D39D003D1858 /* Mask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
